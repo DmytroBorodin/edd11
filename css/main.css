@@ -249,7 +249,6 @@ footer {
 	html{
 		font-size: 7px;
 		background-size: cover;
-		height: auto;
 	}
 	.container{
 		flex-direction: column;
@@ -270,12 +269,18 @@ footer {
 		width: 41.7rem;
 	}
 }
+@media screen and (max-height: 560px){
+	html{
+		font-size: 6.66px;
+		height: auto;
+	}
+}
 @media screen and (max-width: 500px) {
 	html{
 		font-size: 6.66px;
 	}
 	body {
-		height: 100%;
+		min-height: 100vh;
 	}
 	.wrap{
 		padding: 0 3rem 9.23rem;
