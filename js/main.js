@@ -8,8 +8,11 @@ let wrap = document.querySelector('.wrap');
 let mainContent = document.querySelector('.main__content');
 let countriesBlock = document.querySelector('.countries__block');
 let tipsBlock = document.querySelector('.tips__block');
-let tipsBlockMini = document.querySelector('.tips__block__500');
+let tipsBlockMini = document.querySelector('#tips__block__500');
 let navBar = document.querySelector('.navbar');
+let img = document.getElementById('img');
+let title = document.querySelector('.page__title');
+let subTitle = document.querySelector('.sub__title');
 console.log(mainInput.value);
 
 mainInput.addEventListener('focus', () => {
@@ -22,15 +25,16 @@ mainInput.addEventListener('blur', () => {
 
 mainInputMin.addEventListener('focusin', () => {
 	navBar.scrollIntoView();
-	titleBlock.classList.add('invisible');
-	imgBlock.classList.add('invisible');
-	wrap.classList.add('max-height');
+	title.classList.add('invisible');
+	img.classList.add('invisible');
+	subTitle.classList.add('invisible');
 	mainContent.classList.add('section__mt');
 });
+
 mainInputMin.addEventListener('focusout', () => {
-	titleBlock.classList.remove('invisible');
-	imgBlock.classList.remove('invisible');
-	wrap.classList.remove('max-height');
+	title.classList.remove('invisible');
+  img.classList.remove('invisible');
+  subTitle.classList.remove('invisible');
 	mainContent.classList.remove('section__mt');
 	tipsBlockMini.classList.add('invisible');
 })
@@ -76,3 +80,5 @@ function filterFunctionMini() {
   		})
   	})
 }
+
+

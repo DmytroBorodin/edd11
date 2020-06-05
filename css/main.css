@@ -135,6 +135,12 @@ a {
 	position: relative;
 	margin-top: 3rem;
 }
+.min__width {
+	display: none;
+}
+.tips__block__500 {
+	display: none;
+}
 .width__500 {
 	display: none;
 }
@@ -337,7 +343,7 @@ footer {
 }
 @media screen and (max-width: 320px) {
 	html {
-		height: auto;
+		height: 454px;
 	}
 	body {
 	    min-height: inherit;
@@ -353,6 +359,9 @@ footer {
 	.main__content {
 		margin-top: 5rem;
 	}
+	.section__mt{
+		margin-top: 1rem;
+	}
 	.input__block {
 		height: 6.72rem;
 	}
@@ -360,6 +369,13 @@ footer {
 		display: none;
 	}
 	footer {
-		height: 7.5rem;
+		height: 41.59px;
 	}
+	.normal__width{
+		display: none;
+	}
+	.min__width {
+		display: block;
+	}
+
 }
