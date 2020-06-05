@@ -26,14 +26,14 @@ mainInput.addEventListener('blur', () => {
 mainInputMin.addEventListener('focusin', () => {
 	navBar.scrollIntoView();
 	title.classList.add('invisible');
-	img.classList.add('invisible');
+	img.classList.add('img__pos');
 	subTitle.classList.add('invisible');
 	mainContent.classList.add('section__mt');
 });
 
 mainInputMin.addEventListener('focusout', () => {
 	title.classList.remove('invisible');
-  img.classList.remove('invisible');
+  img.classList.remove('img__pos');
   subTitle.classList.remove('invisible');
 	mainContent.classList.remove('section__mt');
 	tipsBlockMini.classList.add('invisible');

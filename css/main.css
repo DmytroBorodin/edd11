@@ -377,5 +377,11 @@ footer {
 	.min__width {
 		display: block;
 	}
+	.img__pos{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -78%);
+	}
 
 }
