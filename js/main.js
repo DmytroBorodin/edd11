@@ -24,7 +24,11 @@ mainInput.addEventListener('blur', () => {
 })
 
 mainInputMin.addEventListener('focusin', () => {
-	navBar.scrollIntoView();
+	window.scroll({
+	  top: 0,
+	  left: 0,
+	  behavior: 'smooth'
+	});
 	title.classList.add('invisible');
 	img.classList.add('img__pos');
 	subTitle.classList.add('invisible');
